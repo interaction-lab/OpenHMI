@@ -1,6 +1,6 @@
 # How to make a simple fabric skin out of a baby onesie (no sewing)
 
-A baby onesie can be used as a quick and easy fabric Blossom skin that requires no sewing. Just turn the onesie backwards and upside-down and fasten the snaps between the robot's ears.
+A baby onesie can be used as a quick and easy fabric skin that requires no sewing. Just turn the onesie backwards and upside-down and fasten the snaps between the robot's ears.
 
 <p align = "center">
 <img src = "/Skin/images/onesie_skin.png" width="600">
