@@ -1,4 +1,4 @@
-This pattern was created with Size 4 (aran weight) yarn and size H/5.0mm crochet hook. 
+This pattern was created with Size 4 (aran weight) yarn and size H/5.0mm crochet hook.
 The sample skin pictured was made with Lion Brand Pound of Love Yarn in the color Elephant Grey.
 
 ### Terms/Abbreviations:
@@ -15,7 +15,7 @@ Ch2 at the end of each row does not count as a dc. Ends of rows will be hidden b
 
 Use stitch markers to help keep track of increases and decreases.
 
-# Pattern 
+# Pattern
 *(continue scrolling for full tutorial with pictures)*
 
 ## Body
@@ -36,16 +36,16 @@ Row 17: dc across, making decreases about ¼, ½, and ¾ of the way through the 
 
 Row 18: hdc across and fasten off
 
-## Head 
+## Head
 (neck up construction)
 
 Work into the opposite side of the starting chain 30
 
-Row 1: *2 dc, dc2* repeat from * to * across (40)
+Row 1: \*2 dc, dc2\* repeat from \* to \* across (40)
 
-Row 2: *3 dc, dc2* repeat from * to * across
+Row 2: \*3 dc, dc2\* repeat from \* to \* across
 
-Row 3: *4 dc, dc2* repeat from * to * across 
+Row 3: \*4 dc, dc2\* repeat from \* to \* across
 
 Row 4: dc across
 
@@ -55,17 +55,17 @@ Row 6: dc across
 
 Row 7: dc across
 
-Row 8: *4 dc, decrease* repeat from * to * across
+Row 8: \*4 dc, decrease\* repeat from \* to \* across
 
-Row 9: *3 dc, decrease* repeat from * to * across
+Row 9: \*3 dc, decrease\* repeat from \* to \* across
 
-Row 10: *2 dc, decrease* repeat from * to * across, fasten off
+Row 10: \*2 dc, decrease\* repeat from \* to \* across, fasten off
 
 ## Head Flap
 
 Attach yarn to 8th st in row 10 of head
 
-Row 1: *dc into first 2 sts, decrease* repeat 4 times, dc into next 2 sts
+Row 1: \*dc into first 2 sts, decrease\* repeat 4 times, dc into next 2 sts
 
 Row 2: 2 dc, decrease, 3 dc, decrease, 2 dc
 
@@ -88,7 +88,7 @@ For best results, put your blank skin on the Blossom frame and mark the desired 
 # Tutorial
 (with pictures)
 
-**Note:** The example skin shown begins with 28 stitches at the neck instead of 30, therefore the number of stitches pictured at each step will not directly match the written instructions. Please refer to the written instructions for exact stitch counts. 
+**Note:** The example skin shown begins with 28 stitches at the neck instead of 30, therefore the number of stitches pictured at each step will not directly match the written instructions. Please refer to the written instructions for exact stitch counts.
 
 ## Body
 (neck down construction)
@@ -179,7 +179,7 @@ Body Construction by Row
 
 Work into the opposite side of the starting chain 30
 
-Row 1: *2 dc, dc2* repeat from * to * across (40)
+Row 1: \*2 dc, dc2\* repeat from \* to \* across (40)
 
 <p align = "center">
 <img src = "/Skin/images/head_start.png" width="600">
@@ -195,7 +195,7 @@ Work into first chain in foundation chain.
 Row 1.
 </p>
 
-Row 2: *3 dc, dc2* repeat from * to * across
+Row 2: \*3 dc, dc2\* repeat from \* to \* across
 
 <p align = "center">
 <img src = "/Skin/images/head_row_2.jpg" width="600">
@@ -204,7 +204,7 @@ Row 2: *3 dc, dc2* repeat from * to * across
 Row 2.
 </p>
 
-Row 3: *4 dc, dc2* repeat from * to * across 
+Row 3: \*4 dc, dc2\* repeat from \* to \* across
 
 <p align = "center">
 <img src = "/Skin/images/head_row_3.png" width="600">
@@ -222,7 +222,7 @@ Rows 4-7: dc across
 Row 7.
 </p>
 
-Row 8: *4 dc, decrease* repeat from * to * across
+Row 8: \*4 dc, decrease\* repeat from \* to \* across
 
 <p align = "center">
 <img src = "/Skin/images/head_row_8.jpg" width="600">
@@ -231,7 +231,7 @@ Row 8: *4 dc, decrease* repeat from * to * across
 Row 8.
 </p>
 
-Row 9: *3 dc, decrease* repeat from * to * across
+Row 9: \*3 dc, decrease\* repeat from \* to \* across
 
 <p align = "center">
 <img src = "/Skin/images/head_row_9.jpg" width="600">
@@ -240,7 +240,7 @@ Row 9: *3 dc, decrease* repeat from * to * across
 Row 9.
 </p>
 
-Row 10: *2 dc, decrease* repeat from * to * across, fasten off
+Row 10: \*2 dc, decrease\* repeat from \* to \* across, fasten off
 
 <p align = "center">
 <img src = "/Skin/images/head_row_10.jpg" width="600">
@@ -253,9 +253,9 @@ Row 10.
 
 Attach yarn to 8th st in row 10 of head
 
-Row 1: *dc into first 2 sts, decrease* repeat 3 times, dc into next 2 sts (11)
+Row 1: \*dc into first 2 sts, decrease\* repeat 3 times, dc into next 2 sts (11)
 
-Row 2: 2 dc, decrease, 3 dc, decrease, 2 dc 
+Row 2: 2 dc, decrease, 3 dc, decrease, 2 dc
 
 Row 3: 1 dc, decrease, 3 dc, decrease, 1 dc
 
@@ -297,7 +297,7 @@ Add eyes and nose.
 
 ## Dressing the Blossom Frame
 
-**Note:** The following steps show a quick and easy way to secure the skin on the robot by lacing the tail string on the head flap to lace up the back of the skin. For a neater, more permanent closure, consider attaching buttons or a zipper. 
+**Note:** The following steps show a quick and easy way to secure the skin on the robot by lacing the tail string on the head flap to lace up the back of the skin. For a neater, more permanent closure, consider attaching buttons or a zipper.
 
 Starting with the headflap between the ears, drape the skin over the front of the robot frame
 
