@@ -13,7 +13,7 @@ Here is the to-do list to get ready before the OpenHMI workshop:
 
 2) Purchasing needed materials: This is a purchase list [(link)](https://docs.google.com/spreadsheets/d/160ENST97K0b6GmP2vGoKJ554m8fZKPFYfByFBAFuFu0/edit?usp=sharing) of all the required materials needed for building the robot. The list includes the item, a purchase link and quantity needed for building 1 OpenHMI robot.
 
-3) Robot Skin: Amy will update this section.
+3) Robot Skin: The *Skin* directory contains instructions to create fabric and crocheted skins for the robot. 
 
 4) Others: To run the robot code, either Ubuntu or Windows machines work well. However, because Opensense is based on Microsoft Platform for Situated Intelligence, a Windows machine will be needed to run the full robot + human perception demo.
 
