@@ -98,7 +98,7 @@ Foundation Chain: Chain 32
 Row 1: dc into third chain from hook, dc into each remaining chain, chain 2 and turn (30)
 
 <p align = "center">
-<img src = "/images/row_1.png" width="600">
+<img src = "/Skin/images/row_1.png" width="600">
 </p>
 <p align = "center">
 Row 1.
@@ -107,7 +107,7 @@ Row 1.
 Row 2: dc across, making increases (dc2) in first, center, and last st, chain 2 and turn (33)
 
 <p align = "center">
-<img src = "/images/row_2.png" width="600">
+<img src = "/Skin/images/row_2.png" width="600">
 </p>
 <p align = "center">
 Row 2.
@@ -116,7 +116,7 @@ Row 2.
 Row 3: dc across, making increases about ¼ and ¾ of the way through the row, chain 2 and turn (35)
 
 <p align = "center">
-<img src = "/images/row_3.png" width="600">
+<img src = "/Skin/images/row_3.png" width="600">
 </p>
 <p align = "center">
 Row 3.
@@ -125,14 +125,14 @@ Row 3.
 Rows 4-16: Repeat rows 2 and 3 (68)
 
 <p align = "center">
-<img src = "/images/row_4.png" width="600">
+<img src = "/Skin/images/row_4.png" width="600">
 </p>
 <p align = "center">
 Row 4.
 </p>
 
 <p align = "center">
-<img src = "/images/row_5.png" width="600">
+<img src = "/Skin/images/row_5.png" width="600">
 </p>
 <p align = "center">
 Row 5.
@@ -143,7 +143,7 @@ continue alternating to the end of row 16...
 </p>
 
 <p align = "center">
-<img src = "/images/row_16.png" width="600">
+<img src = "/Skin/images/row_16.png" width="600">
 </p>
 <p align = "center">
 Row 16.
@@ -152,7 +152,7 @@ Row 16.
 Row 17: dc across, making decreases about ¼, ½, and ¾ of the way through the row, chain 2 and turn (65)
 
 <p align = "center">
-<img src = "/images/row_17.png" width="600">
+<img src = "/Skin/images/row_17.png" width="600">
 </p>
 <p align = "center">
 Row 17.
@@ -161,14 +161,14 @@ Row 17.
 Row 18: hdc across and fasten off
 
 <p align = "center">
-<img src = "/images/row_18.png" width="600">
+<img src = "/Skin/images/row_18.png" width="600">
 </p>
 <p align = "center">
 Row 18.
 </p>
 
 <p align = "center">
-<img src = "/images/labelled_body.png" width="800">
+<img src = "/Skin/images/labelled_body.png" width="800">
 </p>
 <p align = "center">
 Body Construction by Row
@@ -182,14 +182,14 @@ Work into the opposite side of the starting chain 30
 Row 1: *2 dc, dc2* repeat from * to * across (40)
 
 <p align = "center">
-<img src = "/images/head_start.png" width="600">
+<img src = "/Skin/images/head_start.png" width="600">
 </p>
 <p align = "center">
 Work into first chain in foundation chain.
 </p>
 
 <p align = "center">
-<img src = "/images/head_row_1.jpg" width="600">
+<img src = "/Skin/images/head_row_1.jpg" width="600">
 </p>
 <p align = "center">
 Row 1.
@@ -198,7 +198,7 @@ Row 1.
 Row 2: *3 dc, dc2* repeat from * to * across
 
 <p align = "center">
-<img src = "/images/head_row_2.jpg" width="600">
+<img src = "/Skin/images/head_row_2.jpg" width="600">
 </p>
 <p align = "center">
 Row 2.
@@ -207,7 +207,7 @@ Row 2.
 Row 3: *4 dc, dc2* repeat from * to * across 
 
 <p align = "center">
-<img src = "/images/head_row_3.png" width="600">
+<img src = "/Skin/images/head_row_3.png" width="600">
 </p>
 <p align = "center">
 Row 3.
@@ -216,7 +216,7 @@ Row 3.
 Rows 4-7: dc across
 
 <p align = "center">
-<img src = "/images/head_row_7.jpg" width="600">
+<img src = "/Skin/images/head_row_7.jpg" width="600">
 </p>
 <p align = "center">
 Row 7.
@@ -225,7 +225,7 @@ Row 7.
 Row 8: *4 dc, decrease* repeat from * to * across
 
 <p align = "center">
-<img src = "/images/head_row_8.jpg" width="600">
+<img src = "/Skin/images/head_row_8.jpg" width="600">
 </p>
 <p align = "center">
 Row 8.
@@ -234,7 +234,7 @@ Row 8.
 Row 9: *3 dc, decrease* repeat from * to * across
 
 <p align = "center">
-<img src = "/images/head_row_9.jpg" width="600">
+<img src = "/Skin/images/head_row_9.jpg" width="600">
 </p>
 <p align = "center">
 Row 9.
@@ -243,7 +243,7 @@ Row 9.
 Row 10: *2 dc, decrease* repeat from * to * across, fasten off
 
 <p align = "center">
-<img src = "/images/head_row_10.jpg" width="600">
+<img src = "/Skin/images/head_row_10.jpg" width="600">
 </p>
 <p align = "center">
 Row 10.
@@ -266,14 +266,14 @@ Row 7: decrease, dc into next 3 sts, decrease
 Row 8: hdc across, fasten off, leave 18” of yarn attached at the tail
 
 <p align = "center">
-<img src = "/images/completed_head_flap.png" width="600">
+<img src = "/Skin/images/completed_head_flap.png" width="600">
 </p>
 <p align = "center">
 Completed head flap.
 </p>
 
 <p align = "center">
-<img src = "/images/completed_skin_1.png" width="600">
+<img src = "/Skin/images/completed_skin_1.png" width="600">
 </p>
 <p align = "center">
 Completed skin before eyes and nose are added.
@@ -288,8 +288,8 @@ Eyes: attach between rows 6 and 7 of the head approx. 8 sts away from the nose o
 For best results, put your blank skin on the Blossom frame and mark the desired placement of the eyes and nose before attaching.
 
 <p align = "center">
-<img src = "/images/completed_robot_1.png" height="500">
-<img src = "/images/completed_robot_2.png" height="500">
+<img src = "/Skin/images/completed_robot_1.png" height="500">
+<img src = "/Skin/images/completed_robot_2.png" height="500">
 </p>
 <p align = "center">
 Add eyes and nose.
@@ -302,26 +302,26 @@ Add eyes and nose.
 Starting with the headflap between the ears, drape the skin over the front of the robot frame
 
 <p align = "center">
-<img src = "/images/dress_robot_1.png" width="300">
+<img src = "/Skin/images/dress_robot_1.png" width="300">
 </p>
 
 Use a crochet hook to loosely lace up the back of the skin with the extra yarn attached to the head flap.
 
 <p align = "center">
-<img src = "/images/dress_robot_2.png" height="500">
-  <img src = "/images/dress_robot_3.png" height="500">
+<img src = "/Skin/images/dress_robot_2.png" height="500">
+  <img src = "/Skin/images/dress_robot_3.png" height="500">
 </p>
 
 Pull the string tight to fasten the skin then tuck it underneath the bottom edge.
 
 <p align = "center">
-<img src = "/images/dress_robot_4.png" width="300">
+<img src = "/Skin/images/dress_robot_4.png" width="300">
 </p>
 
 Now your Blossom robot is dressed and ready to go!
 
 <p align = "center">
-<img src = "/images/completed_robot_2.png" height="500">
+<img src = "/Skin/images/completed_robot_2.png" height="500">
 </p>
 <p align = "center">
 Completed skin on Blossom frame.
