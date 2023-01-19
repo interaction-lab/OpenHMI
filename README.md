@@ -20,3 +20,50 @@ Here is the to-do list to get ready before the OpenHMI workshop:
 
 # How to Build:
 
+
+
+# How to Cite
+
+If you use this repository or any of its content, please cite it as follows:
+
+## Citation for the original Blossom robot
+
+Suguitan, Michael, and Guy Hoffman. "Blossom: A handcrafted open-source robot." ACM Transactions on Human-Robot Interaction (THRI) 8.1 (2019): 1-27.
+
+Bibtex:
+```
+@article{suguitan2019blossom,
+author = {Suguitan, Michael and Hoffman, Guy},
+title = {Blossom: A Handcrafted Open-Source Robot},
+year = {2019},
+issue_date = {March 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {1},
+doi = {10.1145/3310356},
+journal = {J. Hum.-Robot Interact.},
+month = {mar},
+articleno = {2},
+numpages = {27},
+keywords = {craft, social robotics, toolkit, handcrafted, robot toolkit, craft robotics, 
+            research platform, open-source, Robot design, soft robotics}
+}
+```
+
+## Citation for the OpenSense system
+
+Stefanov, Kalin, et al. "OpenSense: A Platform for Multimodal Data Acquisition and Behavior Perception." Proceedings of the 2020 International Conference on Multimodal Interaction. 2020.
+
+Bibtex:
+```
+@inproceedings{stefanov2020opensense,
+  title={OpenSense: A Platform for Multimodal Data Acquisition and Behavior Perception},
+  author={Stefanov, Kalin and Huang, Baiyu and Li, Zongjian and Soleymani, Mohammad},
+  booktitle={Proceedings of the 2020 International Conference on Multimodal Interaction},
+  pages={660--664},
+  year={2020}
+}
+```
+
+----
