@@ -1,5 +1,5 @@
 # OpenHMI
-Official GitHub repository for OpenHMI: A Co-Design Workshop Toward Developing an Open-Source, Affordable, and Modular Platform for Enabling Scalable and Accessible Research and Outreach in Human-Machine Interaction.
+Official GitHub repository for OpenHMI: A Co-Design Workshop Toward Developing an Open-Source, Affordable, and Modular Platform for Enabling Scalable and Accessible Research and Outreach in Human-Machine Interaction. This repository is developed and updated based on the [Blossom robot repository](https://github.com/hrc2/blossom-public) from the Human-Robot Collaboration & Companionship (HRC2) Lab at Cornell.
 
 
 <img src="https://firebasestorage.googleapis.com/v0/b/uscinteractionlab.appspot.com/o/projects%2Fopenhmi%2Fblossom_natalie.jpg?alt=media&token=cb101f6c-fcd5-4605-bc7d-e66655d63212" alt="drawing" width="500"/>
