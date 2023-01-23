@@ -5,7 +5,7 @@
 
 # Instructions for Sewing Pattern B
 
-Print and cut out Sewing Pattern pieces in [Sewing Pattern B](/Sewing%20Pattern%20B.pdf). Printing on thinner paper will allow you to more easily manipulate and push pins through the pattern, but any regular printer paper will work. Print all pages of the PDF at 100% scale to ensure that the skin is the correct size. Cut out the pattern pieces.
+Print and cut out Sewing Pattern pieces in [Sewing Pattern B](/Skin/Sewing%20Pattern%20B.pdf). Printing on thinner paper will allow you to more easily manipulate and push pins through the pattern, but any regular printer paper will work. Print all pages of the PDF at 100% scale to ensure that the skin is the correct size. Cut out the pattern pieces.
 
 Use the pattern to cut four head and four skirt pieces from the fabric. Pin the paper cutouts to the fabric to get a more accurate cut. If the fabric you are using is stretchy, the pattern should be arranged so that the fabric stretches in the horizontal direction (this will allow the skin to be stretched horizontally around the robot).
 
