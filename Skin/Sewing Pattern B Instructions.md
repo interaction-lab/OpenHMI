@@ -30,7 +30,7 @@ Side seams: align one front panel with another remaining panel, wrong-side-out, 
 Side seams.
 </p>
 
-At this point, you have created a functional skin that will fit the robot. For a neater look, fold over the remaining raw edges of the skin about ½ an inch and sew to create a basic hem. Sew on snaps or super glue velcro at the top, middle, and bottom of the back panels to fasten the skin.
+At this point, you have created a functional skin that will fit the robot. For a neater look, fold over the remaining raw edges of the skin about ½ an inch and sew to create a basic hem. Sew on buttons, apply safety eyes, or embroider the eyes and nose, as shown. Sew on snaps or super glue velcro at the top, middle, and bottom of the back panels to fasten the skin.
 
 <p align = "center">
 <img src = "/Skin/images/flat_skin_b.png" width="600">
