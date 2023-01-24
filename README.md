@@ -20,6 +20,11 @@ Here is the to-do list to get ready before the OpenHMI workshop:
 
 # How to Build:
 
+To build the robot, you will need to assemble 1) robot skeleton; 2) wiring between motors.
+
+1) You can follow this [build guide](https://docs.google.com/presentation/d/1tSICkZTfJj_O5U8Cg3pJ7uGAolSJe6wW/edit?usp=sharing&ouid=105532696586971028354&rtpof=true&sd=true) to work on building the robot skeleton.
+
+2) You can follow this [build guide](https://docs.google.com/presentation/d/1g5RqoF_3xt6z6RvbIo_sDCCCWvMbcokz0HMdGt5Rlj0/edit?usp=sharing) to work on setting up the wiring between motors, and between motors and computer.
 
 
 # How to Cite
