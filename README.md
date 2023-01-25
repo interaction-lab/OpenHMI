@@ -15,7 +15,7 @@ Here is the to-do list to get ready before the OpenHMI workshop:
 
 3) Robot Skin: The *Skin* directory contains instructions to create fabric and crocheted skins for the robot. 
 
-4) Others: To run the robot code, either Ubuntu or Windows machines work well. However, because Opensense is based on Microsoft Platform for Situated Intelligence, some of its components rely on Windows environment, a Windows machine will be needed to run the full robot + human perception demo.
+4) Host computer: To run the robot code, either Ubuntu or Windows machines work well. [OpenSense](https://github.com/intelligent-human-perception-laboratory/OpenSense)'s standalone application is used for human perceptions for this project. However, because Opensense is based on [Microsoft Platform for Situated Intelligence](https://github.com/microsoft/psi), some of its components rely on Windows environment, a Windows machine will be needed to run the full robot + human perception demo.
 
 
 # How to Build:
