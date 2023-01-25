@@ -1,0 +1,228 @@
+{
+	Id: "42bdaf69-4a88-45b3-897b-26283a193dcf",
+	Name: "Do head gesture detection and send results to Blossom HTTP web server.",
+	Description: "",
+	DeliveryPolicy: {
+		InitialQueueSize: 1,
+		MaximumQueueSize: 1,
+		Name: "LatestMessage"
+	},
+	Instances: [
+		{
+			ComponentType: "OpenSense.Components.Psi.Media.MediaCaptureConfiguration, OpenSense.Components.Psi.Media.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			Raw: {
+				CaptureAudio: false,
+				BacklightCompensation: {
+					Value: false,
+					Auto: false
+				},
+				Brightness: {
+					Value: 0,
+					Auto: false
+				},
+				ColorEnable: {
+					Value: false,
+					Auto: false
+				},
+				Contrast: {
+					Value: 0,
+					Auto: false
+				},
+				Gain: {
+					Value: 1,
+					Auto: false
+				},
+				Gamma: {
+					Value: 100,
+					Auto: false
+				},
+				Hue: {
+					Value: 0,
+					Auto: false
+				},
+				Saturation: {
+					Value: 64,
+					Auto: false
+				},
+				Sharpness: {
+					Value: 2,
+					Auto: false
+				},
+				WhiteBalance: {
+					Value: 4600,
+					Auto: true
+				},
+				Focus: {
+					Value: 0,
+					Auto: false
+				},
+				UseInSharedMode: false,
+				Width: 1280,
+				Height: 720,
+				Framerate: 30.0
+			},
+			Id: "09ae8235-e7ec-479c-a21c-887f7d49a5f6",
+			Name: "Webcam",
+			Description: "",
+			Inputs: []
+		},
+		{
+			ComponentType: "OpenSense.Components.Psi.Imaging.ResizeImageOperatorConfiguration, OpenSense.Components.Psi.Imaging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			Width: 640,
+			Height: 480,
+			SamplingMode: "Bilinear",
+			BypassIfPossible: true,
+			Id: "2af1ea92-bb53-463f-bb3a-602c40b19b53",
+			Name: "Resize Image",
+			Description: "For faster processing speed.",
+			Inputs: [
+				{
+					Id: "ca67f1c1-0f95-45ec-b088-11647a27b3fe",
+					LocalPort: {
+						Identifier: "In",
+						Index: null
+					},
+					RemoteId: "09ae8235-e7ec-479c-a21c-887f7d49a5f6",
+					RemotePort: {
+						Identifier: "Out",
+						Index: null
+					},
+					DeliveryPolicy: null
+				}
+			]
+		},
+		{
+			ComponentType: "OpenSense.Components.OpenFace.OpenFaceConfiguration, OpenSense.Components.OpenFace.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			Mute: false,
+			FocalLengthX: 500.0,
+			FocalLengthY: 500.0,
+			CenterX: 320.0,
+			CenterY: 240.0,
+			AutoAdjustCenter: true,
+			Id: "d25ed650-7695-4e0e-9c9d-3a296a6ccaf0",
+			Name: "Head Detection (OpenFace)",
+			Description: "CPU intensive.",
+			Inputs: [
+				{
+					Id: "38172f1f-0cfc-4eb8-a003-73e3211939f4",
+					LocalPort: {
+						Identifier: "In",
+						Index: null
+					},
+					RemoteId: "2af1ea92-bb53-463f-bb3a-602c40b19b53",
+					RemotePort: {
+						Identifier: "Out",
+						Index: null
+					},
+					DeliveryPolicy: null
+				}
+			]
+		},
+		{
+			ComponentType: "OpenSense.Components.HeadGesture.HeadGestureDetectorConfiguration, OpenSense.Components.HeadGesture, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			Id: "85a07151-ebdf-4f81-9ca6-3a6c9f46d38f",
+			Name: "Head Gesture Detector",
+			Description: "Inference head gesture base on head detection outputs.",
+			Inputs: [
+				{
+					Id: "1287974b-ded4-4b53-b0a9-c3627f0e9460",
+					LocalPort: {
+						Identifier: "In",
+						Index: null
+					},
+					RemoteId: "d25ed650-7695-4e0e-9c9d-3a296a6ccaf0",
+					RemotePort: {
+						Identifier: "PoseOut",
+						Index: null
+					},
+					DeliveryPolicy: null
+				}
+			]
+		},
+		{
+			ComponentType: "OpenSense.Components.PythonSupports.PythonConfiguration, OpenSense.Components.PythonSupports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			MetadataCode: "import clr\r\nclr.AddReference(\"OpenSense.Components.OpenFace.Common\")\r\nfrom OpenSense.Components.OpenFace import Gesture\r\n\r\nimport OpenSense.Components.PythonSupports.PortBuilder as pb\r\nPORTS = [\r\n    pb.Create().AsInput().WithName(\"In\").WithType(Gesture).Build(),\r\n]",
+			RuntimeCode: "url = \"localhost:8080\"\r\n\r\nimport clr\r\nclr.AddReference(\"OpenSense.Components.OpenFace.Common\")\r\nfrom OpenSense.Components.OpenFace import Gesture\r\n\r\n# Requests module is not a built-in module, so we are not using it\r\nfrom http.client import HTTPConnection\r\nconnection = HTTPConnection(url, timeout=1)\r\n\r\ndef In(gesture, envelope):\r\n    val = int(gesture) # Enum limitation\r\n    path = None\r\n    if val == 0:\r\n        path = \"/none\"\r\n    elif val == 1:\r\n        path = \"/nod\"\r\n    elif val == 2:\r\n        path = \"/shake\"\r\n    elif val == 3:\r\n        path = \"/tilt\"\r\n    else: # Invalid value\r\n        pass \r\n    try:\r\n        connection.request(\"GET\", path)\r\n        response = connection.getresponse()\r\n    except Exception as e:\r\n        pass\r\n\r\ndef Dispose():\r\n    connection.close()",
+			Id: "8e341b67-b966-45e4-b978-6c310b2dc6d2",
+			Name: "HTTP Client",
+			Description: "Send results to Blossom driver.",
+			Inputs: [
+				{
+					Id: "f60f3f62-3e94-4a31-a20b-2348ddb45c72",
+					LocalPort: {
+						Identifier: "In",
+						Index: null
+					},
+					RemoteId: "85a07151-ebdf-4f81-9ca6-3a6c9f46d38f",
+					RemotePort: {
+						Identifier: "Out",
+						Index: null
+					},
+					DeliveryPolicy: null
+				}
+			]
+		},
+		{
+			ComponentType: "OpenSense.Components.HeadGesture.Visualizer.HeadGestureVisualizerConfiguration, OpenSense.WPF.Components.HeadGesture.Visualizer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			Id: "d055e8b7-cacc-4be4-8937-2c9910e9707d",
+			Name: "Gesture View",
+			Description: "Show Nod/Shake/Tilt.",
+			Inputs: [
+				{
+					Id: "2b059d9d-78a9-4f2d-808e-4bcf75fdc535",
+					LocalPort: {
+						Identifier: "In",
+						Index: null
+					},
+					RemoteId: "85a07151-ebdf-4f81-9ca6-3a6c9f46d38f",
+					RemotePort: {
+						Identifier: "Out",
+						Index: null
+					},
+					DeliveryPolicy: null
+				}
+			]
+		},
+		{
+			ComponentType: "OpenSense.Components.OpenFace.Visualizer.OpenFaceVisualizerConfiguration, OpenSense.WPF.Components.OpenFace.Visualizer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			Mute: false,
+			CircleRadius: 5,
+			LineThickness: 3,
+			DrawHeadLandmarks: true,
+			DrawHeadIndicatorLines: true,
+			DrawEyeLandmarks: true,
+			DrawEyeIndicatorLines: true,
+			Id: "28cb2b39-61c1-4cb2-9320-5770c468b3d7",
+			Name: "Detection View",
+			Description: "",
+			Inputs: [
+				{
+					Id: "d93ee5df-177f-447d-9e0d-c7f280f9888d",
+					LocalPort: {
+						Identifier: "DataIn",
+						Index: null
+					},
+					RemoteId: "d25ed650-7695-4e0e-9c9d-3a296a6ccaf0",
+					RemotePort: {
+						Identifier: "Out",
+						Index: null
+					},
+					DeliveryPolicy: null
+				},
+				{
+					Id: "a3504046-0b79-4722-9ac2-8b4df13af195",
+					LocalPort: {
+						Identifier: "ImageIn",
+						Index: null
+					},
+					RemoteId: "2af1ea92-bb53-463f-bb3a-602c40b19b53",
+					RemotePort: {
+						Identifier: "Out",
+						Index: null
+					},
+					DeliveryPolicy: null
+				}
+			]
+		}
+	]
+}
