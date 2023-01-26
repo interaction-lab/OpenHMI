@@ -15,7 +15,7 @@ Here, we suppose your Blossom can be driven by its official software.
 If you have not completed it, you can follow the setup steps listed on its [official repository](https://github.com/hrc2/blossom-public). *That repository is also included in this OpenHMI repository.*
 
 Basically, by following those steps, you (optionally) create a virtual environment and download some python modules.
-Then you got an application or (applications) that can drive Blossom move.
+Then you got an application (or applications) that can drive Blossom move.
 However, in this example, we only need the application's Command Line Interface (CLI). So, if its Web UI or Mobile Application is not working, you do not need to make them work.
 Its CLI lets you type in a sequence name and it will play that sequence.
 
