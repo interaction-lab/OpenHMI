@@ -31,7 +31,7 @@ To run the Bridge, just run `start.py` in this folder (e.g. "`python start.py`")
 You may want to check its supported arguments, you can use "`-h`" argument to get a list of them (e.g. "`python start.py -h`").
 The Bridge will wait for Blossom driver for seconds (default to 15) before it spins up a web server.
 
-To test the Bridge, open your web browser, and access links like [localhost:8080/nod](http://localhost:8080/nod), [localhost:8080/shake](http://localhost:8080/shake), [localhost:8080/tilt](http://localhost:8080/tilt). You can keep freshing the web page (by pressing F5 or refresh button) to simulate continuous recognition result data stream.
+To test the Bridge, open your web browser, and access links like [localhost:8080/nod](http://localhost:8080/nod), [localhost:8080/shake](http://localhost:8080/shake), [localhost:8080/tilt](http://localhost:8080/tilt). You can keep refreshing the web page (by pressing F5 or refresh button) to simulate a continuous recognition result data stream.
 
 To stop the Bridge, press `Ctrl-C`.
 
