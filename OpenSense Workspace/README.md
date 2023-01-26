@@ -30,7 +30,7 @@ So, it is OK to run OpenSense pipelines without the Bridge running aside.
 
 # Software Architecture Overview
 
-In this project we will use OpenSense to do the head detection part of the job. OpenSense is extensible and has a graphical UI that users can interact with.
+In this project we will use OpenSense to do the human perception part of the job. OpenSense is extensible and has a graphical UI that users can interact with.
 It suits the needs of our OpenHMI project.
 
 However, Blossom's official codebase is written in Python, which is different from our OpenSense's C# codebase. As a result, our software solution has 3 separate parts, OpenSense, Blossom driver and OpenSense-Blossom Bridge.
@@ -40,7 +40,7 @@ In detail, the Bridge opens an HTTP web server that listing for head gesture det
 
 # Instructions of OpenSense Installment
 
-In this instruction we use a pre-compiled version of OpenSense, so you do not need to install build tools and build it. OpenSense is open-sourced on Github, so you can build it from source code if you prefer. The build instruction is available on Github.
+In this instruction we use a pre-compiled version of OpenSense, so you **do not** need to install build tools and build it. OpenSense is open-sourced on Github, so you can build it from source code if you prefer. The build instruction is available on its github reoi.
 
 You can download the pre-compiled OpenSense from OpenSense's [Github Release Page](https://github.com/intelligent-human-perception-laboratory/OpenSense/releases). OpenSense and its default components are bundled in a ZIP file. Unzip it to somewhere you like for later use. OpenSense is designed to be ready to run without going through an installation process. When you do not need OpenSense and want to free some space of your disk, deleting the folder will remove OpenSense.
 
@@ -59,7 +59,7 @@ For .NET 7 runtime, to check whether you need to download it from Microsoft and 
 
 Launch OpenSense's UI by double clicking `OpenSense.WPF.exe`. It should look like the following picture.
 
-> Sometimes, Windows will prompt you a warning window saying there are risks running this software (OpenSense WPF Application in this case). Windows gives this warning because OpenSense has a handy feature that it scans its own folder looking for components and loads them dynamically. However, in our case, all components in the ZIP bundle are written by the development team, and we did not buy a certificate from Microsoft for signing it. If you have concern about security issues, you can try to run it in a virtual machine, like Hyper-V.
+> Sometimes, Windows will prompt you a warning window saying there are risks running this software (OpenSense WPF Application in this case). Windows gives this warning because OpenSense has a handy feature that it scans its own folder looking for components and loads them dynamically. With this feature, users can easily drop their own component DLLs in that folder and use them directly with OpenSense's GUI application. It may expose risks if you drop components from unknown sources. However, in our case, all components in the ZIP bundle are written by the development team, and we did not buy a certificate from Microsoft for signing it. If you have concern about security issues, you can try to run it in a virtual machine, like Hyper-V.
 
 ![OpenSense main window.](images/main-window-360px.png)
 
@@ -77,7 +77,8 @@ Click `Webcam` on the left, then select a camera from the `Camera` drop down lis
 
 If you modified the OpenSense-Blossom Bridge, such as the port it listens to, you can select the component called `HTTP Client` and modify its python code shown on the right. There are 2 sections of python codes, the second (on the bottom) is the one having parameters can be modified.
 
-If you want to save the previous modification, you can do so by clicking `File` then `Save as` menu button to save it to a new file.
+If you want to save the previous modifications, you can do so by clicking `File` then `Save as` menu button to save it to a new file.
+OpenSense does not automatically save modifications.
 
 Now, we can run our head gesture detection pipeline.
 Click menu button `Runner`.
@@ -113,7 +114,7 @@ Optionally, save the modified pipeline.
 Switch to Pipeline Runner by clicking the `Runner` menu button.
 Then, run the pipeline by clicking the `Run/Stop` menu button and the `Run` sub menu button.
 
-Try to talk and pause, Blossom will nod when you
+Try to talk and pause, Blossom will nod after you stop talking.
 
 # Additional Challenge
 
