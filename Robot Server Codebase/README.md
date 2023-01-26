@@ -5,9 +5,9 @@ We call it `OpenSense-Blossom Bridge` (or `Bridge` in-short).
 
 # How It Works
 
-It starts Blossom then starts an HTTP web server.
-Whenever the server receives a request, it ask Blossom play a sequence.
-So that, OpenSense can send messages to Blossom by making HTTP requests.
+It starts Blossom in a sub-process then starts an HTTP web server.
+Whenever the server receives a request, it asks Blossom play a sequence through standard input.
+With that, OpenSense can send messages to Blossom by making HTTP requests.
 
 # Prerequisites
 
