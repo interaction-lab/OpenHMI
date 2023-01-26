@@ -129,21 +129,14 @@ def get_args():
 		help="Run the server without running Blossom driver. Handy for testing.",
 	)
 	parser.add_argument(
-		"-d",
-		"--debouncing",
-		action="store",
-		type=float,
-		dest="debouncing",
-		help="Time in seconds used for false command debouncing, or None to disable. Default to None.",
-	)
-	parser.add_argument(
 		"-p",
 		"--port",
+		metavar="PORT",
 		action="store",
 		type=int,
 		default=8080,
 		dest="http_port",
-		help="The port number that the server listens to.",
+		help="The port number that the server listens to. Default to 8080.",
 	)
 	parser.add_argument(
 		"-a",
@@ -152,7 +145,15 @@ def get_args():
 		type=str,
 		default="localhost",
 		dest="hostname",
-		help="Hostname of the server.",
+		help="Hostname of the server. Default to localhost.",
+	)
+	parser.add_argument(
+		"-d",
+		"--debouncing",
+		action="store",
+		type=float,
+		dest="debouncing",
+		help="Time in seconds used for command debouncing, or None to disable. Default to None.",
 	)
 	parser.add_argument(
 		"-b",
@@ -161,7 +162,7 @@ def get_args():
 		type=str,
 		default="../Robot Control Codebase",
 		dest="ctrl_dir",
-		help="Blossom driver directory, where its 'start.py' located.",
+		help="Blossom driver directory, where its 'start.py' located. Default to '../Robot Control Codebase'.",
 	)
 	parser.add_argument(
 		"-s",
