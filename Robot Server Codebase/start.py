@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import re
 import subprocess
 import time
 import sys
@@ -75,8 +76,9 @@ def seq_cb(proc, debouncing = None):
 
 def run(args):
 	"""Run Blossom and server."""
+	exe = re.split(r"\s+", args.python_exe) # Simple solution, will yield wrong results if whitespaces are quoted
 	process_args = [
-		"python", 
+		*exe,
 		"{0}/start.py".format(args.ctrl_dir), 
 		"-b", # We do not use its Web UI
 	]
@@ -154,6 +156,16 @@ def get_args():
 		type=float,
 		dest="debouncing",
 		help="Time in seconds used for command debouncing, or None to disable. Default to None.",
+	)
+	parser.add_argument(
+		"-e",
+		"--python",
+		action="store",
+		type=str,
+		default="python",
+		dest="python_exe",
+		help="Python executable command. Default to 'python'. You may want to change it to 'python3' or 'py -3'."
+			+ " Warning: Will yield wrong results if whitespaces are quoted.",
 	)
 	parser.add_argument(
 		"-b",

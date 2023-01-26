@@ -28,6 +28,9 @@ This OpenSense-Blossom Bridge is simple, and it only relies on python's [Standar
 That means you **do not** need to install additional python modules.
 
 To run the Bridge, just run `start.py` in this folder (e.g. "`python start.py`"). *Please make sure your command shell's current working directory is set to this folder.*
+
+> If you want to run Blossom driver in a virtual python environment. Depending on the virtual environment module/software's implementation, you may need to either run the Bridge in that same virtual environment, or change the python command using an argument, or modify the code.
+
 You may want to check its supported arguments, you can use "`-h`" argument to get a list of them (e.g. "`python start.py -h`").
 The Bridge will wait for Blossom driver for seconds (default to 15) before it spins up a web server.
 
