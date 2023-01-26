@@ -40,7 +40,7 @@ In detail, the Bridge opens an HTTP web server that listing for head gesture det
 
 # Instructions of OpenSense Installment
 
-In this instruction we use a pre-compiled version of OpenSense, so you **do not** need to install build tools and build it. OpenSense is open-sourced on Github, so you can build it from source code if you prefer. The build instruction is available on its github reoi.
+In this instruction we use a pre-compiled version of OpenSense, so you **do not** need to install build tools and build it. OpenSense is open-sourced on Github, so you can build it from source code if you prefer. The build instruction is available in its github repo.
 
 You can download the pre-compiled OpenSense from OpenSense's [Github Release Page](https://github.com/intelligent-human-perception-laboratory/OpenSense/releases). OpenSense and its default components are bundled in a ZIP file. Unzip it to somewhere you like for later use. OpenSense is designed to be ready to run without going through an installation process. When you do not need OpenSense and want to free some space of your disk, deleting the folder will remove OpenSense.
 
