@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 bodyTemplate = r"<html><head><title>Notification Received</title></head><body><p>Request Path: %s</p></body></html>"
