@@ -52,7 +52,7 @@ Although, OpenSense does not require a installation process, its underlying runt
 
 Launch OpenSense's UI by double clicking `OpenSense.WPF.exe`. It should look like the following picture.
 
-> Sometimes, Windows will prompt you a warning window saying there are risks running this software (OpenSense WPF Application in this case). Windows gives this warning because OpenSense has a handy feature that it scans its own folder looking for components and loads them dynamically. However, in our case, all components in the ZIP bundle are written by the development team, and we did not bought a certificate from Microsoft for signing it. If you have concern about security issues, you can try to run it in a virtual machine, like Hyper-V.
+> Sometimes, Windows will prompt you a warning window saying there are risks running this software (OpenSense WPF Application in this case). Windows gives this warning because OpenSense has a handy feature that it scans its own folder looking for components and loads them dynamically. However, in our case, all components in the ZIP bundle are written by the development team, and we did not buy a certificate from Microsoft for signing it. If you have concern about security issues, you can try to run it in a virtual machine, like Hyper-V.
 
 ![OpenSense main window.](images/main-window-360px.png)
 
