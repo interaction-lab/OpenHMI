@@ -1,0 +1,143 @@
+{
+	Id: "42bdaf69-4a88-45b3-897b-26283a193dcf",
+	Name: "Do voice activity detection and send results to Blossom HTTP web server.",
+	Description: "",
+	DeliveryPolicy: {
+		InitialQueueSize: 1,
+		MaximumQueueSize: 1,
+		Name: "LatestMessage"
+	},
+	Instances: [
+		{
+			ComponentType: "OpenSense.Components.Psi.Audio.AudioCaptureConfiguration, OpenSense.Components.Psi.Audio.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			Raw: {
+				TargetLatencyInMs: 20,
+				AudioEngineBufferInMs: 500,
+				AudioLevel: -1.0,
+				Gain: 1.0,
+				OptimizeForSpeech: true,
+				UseEventDrivenCapture: true,
+				DropOutOfOrderPackets: false,
+				Format: {
+					FormatTag: "WAVE_FORMAT_PCM",
+					Channels: 1,
+					SamplesPerSec: 16000,
+					AvgBytesPerSec: 32000,
+					BlockAlign: 2,
+					BitsPerSample: 16,
+					ExtraSize: 0
+				}
+			},
+			Id: "35bd8fd1-956e-4cea-a0dd-b0dac6217574",
+			Name: "Microphone",
+			Description: "",
+			Inputs: []
+		},
+		{
+			ComponentType: "OpenSense.Components.Psi.Speech.SystemVoiceActivityDetectorConfiguration, OpenSense.Components.Psi.Speech.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			Raw: {
+				Language: "en-us",
+				Grammars: null,
+				BufferLengthInMs: 1000,
+				VoiceActivityStartOffsetMs: -150,
+				VoiceActivityEndOffsetMs: -150,
+				InitialSilenceTimeoutMs: 0,
+				BabbleTimeoutMs: 0,
+				EndSilenceTimeoutMs: 150,
+				EndSilenceTimeoutAmbiguousMs: 500,
+				InputFormat: {
+					FormatTag: "WAVE_FORMAT_PCM",
+					Channels: 1,
+					SamplesPerSec: 16000,
+					AvgBytesPerSec: 32000,
+					BlockAlign: 2,
+					BitsPerSample: 16,
+					ExtraSize: 0
+				}
+			},
+			Id: "ef33082e-4975-443a-ac79-77dcda14e1c4",
+			Name: "Voice Activity Detection",
+			Description: "",
+			Inputs: [
+				{
+					Id: "1270e2c5-9859-4cb3-bd8a-a865763b803f",
+					LocalPort: {
+						Identifier: "In",
+						Index: null
+					},
+					RemoteId: "35bd8fd1-956e-4cea-a0dd-b0dac6217574",
+					RemotePort: {
+						Identifier: "Out",
+						Index: null
+					},
+					DeliveryPolicy: null
+				}
+			]
+		},
+		{
+			ComponentType: "OpenSense.Components.PythonSupports.PythonConfiguration, OpenSense.Components.PythonSupports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			MetadataCode: "import OpenSense.Components.PythonSupports.PortBuilder as pb\r\nPORTS = [\r\n    pb.Create().AsInput().WithName(\"In\").WithType(bool).Build(),\r\n]",
+			RuntimeCode: "url = \"localhost:8080\"\r\n\r\n# Requests module is not a built-in module, so we are not using it\r\nfrom http.client import HTTPConnection\r\nconnection = HTTPConnection(url, timeout=1)\r\n\r\nlast_state = None\r\n\r\ndef In(state, envelope):\r\n    global last_state # nonlocal does not work here\r\n    changed = state != last_state\r\n    last_state = state\r\n    if not changed:\r\n        return\r\n    path = None\r\n    if state:\r\n        path = \"/nod\"\r\n    else:\r\n        path = \"/none\"\r\n    try:\r\n        connection.request(\"GET\", path)\r\n        response = connection.getresponse()\r\n    except Exception as e:\r\n        pass\r\n\r\ndef Dispose():\r\n    connection.close()",
+			Id: "8e341b67-b966-45e4-b978-6c310b2dc6d2",
+			Name: "HTTP Client",
+			Description: "Send results to Blossom driver.",
+			Inputs: [
+				{
+					Id: "ef2f4140-79e5-4ae4-8f7a-19a53d98cbc3",
+					LocalPort: {
+						Identifier: "In",
+						Index: null
+					},
+					RemoteId: "ef33082e-4975-443a-ac79-77dcda14e1c4",
+					RemotePort: {
+						Identifier: "Out",
+						Index: null
+					},
+					DeliveryPolicy: null
+				}
+			]
+		},
+		{
+			ComponentType: "OpenSense.Components.Audio.Visualizer.AudioVisualizerConfiguration, OpenSense.WPF.Components.Audio.Visualizer.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			Id: "430581ed-f166-4ae0-8a59-7eeec7c9cfee",
+			Name: "Audio View",
+			Description: "",
+			Inputs: [
+				{
+					Id: "357e5cc8-376b-4e81-b0d7-59b4ed55aeef",
+					LocalPort: {
+						Identifier: "In",
+						Index: null
+					},
+					RemoteId: "35bd8fd1-956e-4cea-a0dd-b0dac6217574",
+					RemotePort: {
+						Identifier: "Out",
+						Index: null
+					},
+					DeliveryPolicy: null
+				}
+			]
+		},
+		{
+			ComponentType: "OpenSense.Components.Builtin.Visualizer.BooleanVisualizerConfiguration, OpenSense.WPF.Components.Builtin.Visualizer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+			Id: "05561196-a24b-40ef-af53-a4cfc6bc95a8",
+			Name: "Detection View",
+			Description: "",
+			Inputs: [
+				{
+					Id: "8bc924fd-c250-4c39-b80b-96cbb87aad42",
+					LocalPort: {
+						Identifier: "In",
+						Index: null
+					},
+					RemoteId: "ef33082e-4975-443a-ac79-77dcda14e1c4",
+					RemotePort: {
+						Identifier: "Out",
+						Index: null
+					},
+					DeliveryPolicy: null
+				}
+			]
+		}
+	]
+}

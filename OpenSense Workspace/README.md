@@ -2,6 +2,12 @@
 
 This guide provides steps to run [OpenSense's Windows application](https://github.com/intelligent-human-perception-laboratory/OpenSense/releases), and steps to run *pipelines* which work together with [OpenSense-Blossom Bridge](../Robot%20Server%20Codebase/README.md).
 
+# Goals
+
+We will run 2 pipelines.
+The first pipeline will let Blossom mimicking our head gestures such as nod, tilt and shake.
+And the second pipeline will let Blossom nod its head once we finish talking.
+
 # Prerequisite Hardware and Environment Requirements
 
 Windows operating system with arch AMD64 CPU is required.
@@ -18,13 +24,9 @@ Usually, a standalone webcam hardware will also include a microphone.
 
 Internet connection and some hard disk space for downloading the software is also needed.
 
-Please run [OpenSense-Blossom Bridge](../Robot%20Server%20Codebase/README.md) and set it aside if you have not done it so.
-
-# Goals
-
-We will run 2 pipelines.
-The first pipeline will let Blossom mimicking our head gestures such as nod, tilt and shake.
-And the second pipeline will let Blossom nod its head once we finish talking.
+Please run [OpenSense-Blossom Bridge](../Robot%20Server%20Codebase/README.md) (or Bridge in-short) and set it aside if you have not done it so.
+However, if the Bridge is not running, the following pipelines will still run without throwing errors, because HTTP request errors are silently discarded (see its python code later).
+So, it is OK to run OpenSense pipelines without the Bridge running aside.
 
 # Software Architecture Overview
 
@@ -44,7 +46,12 @@ You can download the pre-compiled OpenSense from OpenSense's [Github Release Pag
 
 If you previously downloaded OpenSense and its major version number (the first digit of the version number) is not 3, please download a newer version from our release page, as an essential component was added in version 3. The version number is displayed on OpenSense's main window.
 
-Although, OpenSense does not require a installation process, its underlying runtime - `.NET 7 runtime` do require an installment. To minimize OpenSense package size, .NET 7 runtime is not packaged together with OpenSense. To check whether you need to download it from Microsoft and install it. Just find and launch `OpenSense.WPF.exe` by double clicking it. If an error prompts like the one below, you do no have .NET 7 runtime installed. By clicking the `Yes` button, you will be lead to its download page. You can also download it in advance by visiting .NET download page at [https://dotnet.microsoft.com/en-us/download/dotnet/7.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) and select `.NET Desktop Runtime 7.x.x Windows x64 Installer`. `SDK 7.x.x Windows x64 Installer` is also acceptable, though it is for .NET developers.
+Although, OpenSense does not require a installation process, its underlying runtime (`.NET 7 runtime`) and a dependency (`Visual C++ Redistributable`) of a component (OpenFace) we will use here do require going through installment processes. To minimize OpenSense package size, They are not packaged together with OpenSense.
+
+For Visual C++ Redistributable, you can download its VS2022 x64 installer from here ([link](https://aka.ms/vs/17/release/vc_redist.x64.exe)).
+More details can be found at Microsoft's page ([link](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)) including the aforementioned installer download link.
+
+For .NET 7 runtime, to check whether you need to download it from Microsoft and install it. Just find and launch `OpenSense.WPF.exe` by double clicking it. If an error prompts like the one below, you do no have .NET 7 runtime installed. By clicking the `Yes` button, you will be lead to its download page. You can also download it in advance by visiting .NET download page at here ([link](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)) and select `.NET Desktop Runtime 7.x.x Windows x64 Installer`. `SDK 7.x.x Windows x64 Installer` is also acceptable, though it is for .NET developers.
 
 ![.NET runtime error message box.](images/runtime-not-installed-240px.png)
 
@@ -92,4 +99,30 @@ Once the pipeline reaches to a complete stop, a message box will pop out indicat
 
 # Run the Second Pipeline (Voice Activity Detection)
 
-TODO:
+> This pipeline requires running OpenSense-Blossom Bridge with Debouncing disabled. Debouncing is disabled by default, unless you enabled it through its command line argument.
+
+All the steps on OpenSense side are basically the same as those for the first pipeline.
+Open a Pipeline Editor window, and load pipeline from file `voice-activity.pipe.json`.
+
+Select the `Microphone` component on the left and set your microphone on the right. Leave other parameters of this component unchanged as they are not important in this demo.
+
+Still, if your OpenSense-Blossom Bridge is running under a different set of parameters, you can modify the `HTTP Client` component's python code to align them.
+
+Optionally, save the modified pipeline.
+
+Switch to Pipeline Runner by clicking the `Runner` menu button.
+Then, run the pipeline by clicking the `Run/Stop` menu button and the `Run` sub menu button.
+
+Try to talk and pause, Blossom will nod when you
+
+# Additional Challenge
+
+Combine 2 pipelines together and achieve a result that, Blossom give one reaction every time the speaker stops speaking, and the reaction is determined by the last recognized head gesture while the speaker was speaking.
+
+Here are some details/hints:
++ In the python component, define 2 input ports, give them different names, define 2 handler functions as well. The name of a port and the name of its handler function should match to each other.
++ No need to care about parallel execution related issues, the underlying Microsoft /psi ensures serial execution.
++ It is OK to ignore the necessity of aligning data timestamps from 2 inputs.
++ OpenSense-Blossom Bridge is not need to be modified. *You can if you want.*
++ Send HTTP request in only 1 of handlers.
++ Operations like copy & paste components and appending components from a file are not implemented.
