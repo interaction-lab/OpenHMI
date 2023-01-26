@@ -11,7 +11,7 @@ And the second pipeline will let Blossom nod its head once we finish talking.
 # Prerequisite Hardware and Environment Requirements
 
 Windows operating system with arch AMD64 CPU is required.
-OpenSense GUI and its head detection component (OpenFace), relies on these environments.
+OpenSense GUI and its head detection component ([OpenFace](https://github.com/TadasBaltrusaitis/OpenFace)), relies on these environments.
 
 A webcam is required for offline head detection.
 It will be used in our first pipeline.
