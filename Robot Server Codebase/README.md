@@ -9,7 +9,7 @@ It starts Blossom then starts an HTTP web server.
 Whenever the server receives a request, it ask Blossom play a sequence.
 So that, OpenSense can send messages to Blossom by making HTTP requests.
 
-# How to Run It
+# Prerequisites
 
 Here, we suppose your Blossom can be driven by its official software.
 If you have not completed it, you can follow the setup steps listed on its [official repository](https://github.com/hrc2/blossom-public). *That repository is also included in this OpenHMI repository.*
@@ -21,6 +21,8 @@ Its CLI lets you type in a sequence name and it will play that sequence.
 > By the way, if you run Blossom CLI on Windows and it posts messages like "Error opening port, try: sudo chmod 777 COM<a_port_number>" and refuses to scan remaining serial ports.
 > And you know your Blossom is assigned a serial port number larger than the port in the message.
 > You can comment out the line `127` of its `config.py` (e.g. turning "`sys.exit(1)`" to "`# sys.exit(1)`").
+
+# How to Run It
 
 The Blossom's official CLI software will be referred as `Blossom driver` in this manual to distinguish it from Blossom robot hardware or other softwares.
 
