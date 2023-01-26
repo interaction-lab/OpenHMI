@@ -126,7 +126,7 @@ def get_args():
 		"--dry_run", 
 		action="store_true", 
 		dest="dry_run", 
-		help="Run the server without running Blossom driver.",
+		help="Run the server without running Blossom driver. Handy for testing.",
 	)
 	parser.add_argument(
 		"-d",
@@ -134,7 +134,7 @@ def get_args():
 		action="store",
 		type=float,
 		dest="debouncing",
-		help="Seconds for false command debouncing, or None to disable. Default to None.",
+		help="Time in seconds used for false command debouncing, or None to disable. Default to None.",
 	)
 	parser.add_argument(
 		"-p",
@@ -170,7 +170,7 @@ def get_args():
 		type=float,
 		default=15,
 		dest="setup_time",
-		help="Wait time in seconds for letting Blossom driver initialize.",
+		help="Wait time in seconds for letting Blossom driver initialize. Default to 15.",
 		# For simplicity, we are not detecting Blossom's state from its output.
 	)
 	args = parser.parse_args()
