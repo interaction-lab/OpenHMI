@@ -208,7 +208,7 @@ Completed head before flaps are added.
 <img src = "/Skin/images/knitting_images/start_front_flap.png" height="600">
 </p>
 <p align = "center">
-All remaining stitches have been transfered to a straignt needle.
+All remaining stitches have been transferred to a straight needle.
 </p>
 
 2. Using a second straight needle, p2tog, purl 36, p2tog, turn (38)
@@ -260,7 +260,7 @@ All remaining stitches have been transfered to a straignt needle.
 </p>
 <p align = "center">
 
-**Making the button hole:**
+**Making the buttonhole:**
 
 24. purl 4, cast off 4, purl 4 (8)
 
