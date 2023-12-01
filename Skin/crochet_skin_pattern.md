@@ -41,11 +41,11 @@ Row 18: hdc across and fasten off
 
 Work into the opposite side of the starting chain 30
 
-Row 1: *2 dc, dc2* repeat from * to * across (40)
+Row 1: \*2 dc, dc2\* repeat from * to * across (40)
 
-Row 2: *3 dc, dc2* repeat from * to * across
+Row 2: \*3 dc, dc2\* repeat from * to * across
 
-Row 3: *4 dc, dc2* repeat from * to * across
+Row 3: \*4 dc, dc2\* repeat from * to * across
 
 Row 4: dc across
 
@@ -55,17 +55,17 @@ Row 6: dc across
 
 Row 7: dc across
 
-Row 8: *4 dc, decrease* repeat from * to * across
+Row 8: \*4 dc, decrease\* repeat from * to * across
 
-Row 9: *3 dc, decrease* repeat from * to * across
+Row 9: \*3 dc, decrease\* repeat from * to * across
 
-Row 10: *2 dc, decrease* repeat from * to * across, fasten off
+Row 10: \*2 dc, decrease\* repeat from * to * across, fasten off
 
 ## Head Flap
 
 Attach yarn to 8th st in row 10 of head
 
-Row 1: *dc into first 2 sts, decrease* repeat 4 times, dc into next 2 sts
+Row 1: \*dc into first 2 sts, decrease\* repeat 4 times, dc into next 2 sts
 
 Row 2: 2 dc, decrease, 3 dc, decrease, 2 dc
 
@@ -179,7 +179,7 @@ Body Construction by Row
 
 Work into the opposite side of the starting chain 30
 
-Row 1: *2 dc, dc2* repeat from * to * across (40)
+Row 1: \*2 dc, dc2\* repeat from * to * across (40)
 
 <p align = "center">
 <img src = "/Skin/images/head_start.png" width="600">
@@ -195,7 +195,7 @@ Work into first chain in foundation chain.
 Row 1.
 </p>
 
-Row 2: *3 dc, dc2* repeat from * to * across
+Row 2: \*3 dc, dc2\* repeat from * to * across
 
 <p align = "center">
 <img src = "/Skin/images/head_row_2.jpg" width="600">
@@ -204,7 +204,7 @@ Row 2: *3 dc, dc2* repeat from * to * across
 Row 2.
 </p>
 
-Row 3: *4 dc, dc2* repeat from * to * across
+Row 3: \*4 dc, dc2\* repeat from * to * across
 
 <p align = "center">
 <img src = "/Skin/images/head_row_3.png" width="600">
@@ -222,7 +222,7 @@ Rows 4-7: dc across
 Row 7.
 </p>
 
-Row 8: *4 dc, decrease* repeat from * to * across
+Row 8: \*4 dc, decrease\* repeat from * to * across
 
 <p align = "center">
 <img src = "/Skin/images/head_row_8.jpg" width="600">
@@ -231,7 +231,7 @@ Row 8: *4 dc, decrease* repeat from * to * across
 Row 8.
 </p>
 
-Row 9: *3 dc, decrease* repeat from * to * across
+Row 9: \*3 dc, decrease\* repeat from * to * across
 
 <p align = "center">
 <img src = "/Skin/images/head_row_9.jpg" width="600">
@@ -240,7 +240,7 @@ Row 9: *3 dc, decrease* repeat from * to * across
 Row 9.
 </p>
 
-Row 10: *2 dc, decrease* repeat from * to * across, fasten off
+Row 10: \*2 dc, decrease\* repeat from * to * across, fasten off
 
 <p align = "center">
 <img src = "/Skin/images/head_row_10.jpg" width="600">
@@ -253,7 +253,7 @@ Row 10.
 
 Attach yarn to 8th st in row 10 of head
 
-Row 1: *dc into first 2 sts, decrease* repeat 3 times, dc into next 2 sts (11)
+Row 1: \*dc into first 2 sts, decrease\* repeat 3 times, dc into next 2 sts (11)
 
 Row 2: 2 dc, decrease, 3 dc, decrease, 2 dc
 
