@@ -53,21 +53,17 @@ Work into the opposite side of the starting chain 30
 Row 1: sc, hdc, dc2 into the same stitch, \*2 dc, dc2\* repeat from \* to \* across, do not turn (40)
 
 Row 2: Start spiral: \*3 dc, dc2\* repeat from \* to \* across (50)
+
 Row 3: \*4 dc, dc2\* repeat from \* to \* across (60)
+
 Row 4-8: dc across (60)
+
 (remaining rows are worked flat)
+
 Row 9: \*10 dc, decrease\* repeat from \* to \* across, chain 2 and turn (55)
+
 Row 10: \*9 dc, decrease\* repeat from \* to \* across, chain 2 and turn (50)
+
 Row 11: \*8 dc, decrease\* repeat from \* to \* across, fasten off (45)
 
-## Eyes and Nose
-
-Nose: attach in center between rows 3 and 4 of the head
-
-Eyes: attach between rows 6 and 7 of the head approx. 8 sts away from the nose on both sides
-
-For best results, put your blank skin on the robot frame and mark the desired placement of the eyes and nose before attaching.
-
-## Dressing the Robot Frame
-
-Remove the head from the robot's frame, noting which direction the robot is facing (nose should align with motor 1). Place the cover over the the tower, then replace the head frame and pull the top of the cover over the head frame. With a yarn needle, use the tail attached to the head flap to sew up the back of the head and secure the flap.
+## Head Flap Instructions TBD
