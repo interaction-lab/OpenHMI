@@ -5,6 +5,8 @@ st = stitch
 
 sl st = slip stitch
 
+sc = single crochet
+
 dc = double crochet
 
 hdc = half double crochet
