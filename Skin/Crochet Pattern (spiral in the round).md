@@ -11,6 +11,8 @@ hdc = half double crochet
 
 dc2 = 2 double crochets in 1 stitch
 
+decrease = dc2tog = double crochet 2 together
+
 ### Notes:
 Ch2 at the end of each row does not count as a dc. Ends of rows will be hidden behind the robot when assembled.
 
@@ -34,7 +36,7 @@ Rows 4-16: Repeat rows 2 and 3 (68)
 
 Row 17: dc across, making decreases about ¼, ½, and ¾ of the way through the row
 
-Row 18: hdc across, sc 2 to even out the spiral, and fasten off
+Row 18: hdc across, sc in the last two stitches to even out the spiral, and fasten off
 
 ## Head
 
@@ -42,45 +44,15 @@ Row 18: hdc across, sc 2 to even out the spiral, and fasten off
 
 Work into the opposite side of the starting chain 30
 
-Row 1: \*2 dc, dc2\* repeat from * to * across, sl st into the first dc, chain 2 and turn (40)
+Row 1: sc, hdc, dc2 into the same stitch, \*2 dc, dc2\* repeat from \* to \* across, do not turn (40)
 
-Row 2: \*3 dc, dc2\* repeat from * to * across, sl st into the first dc, chain 2 and turn (48)
-
-Row 3: \*4 dc, dc2\* repeat from * to * across, sl st into the first dc, chain 2 and turn (58)
-
-Row 4: dc across, sl st into the first dc, chain 2 and turn (58)
-
-Row 5: dc across, sl st into the first dc, chain 2 and turn (58)
-
-Row 6: dc across, sl st into the first dc, chain 2 and turn (58)
-
-Row 7: dc across, sl st into the first dc, chain 2 and turn (58)
-
+Row 2: Start spiral: \*3 dc, dc2\* repeat from \* to \* across (50)
+Row 3: \*4 dc, dc2\* repeat from \* to \* across (60)
+Row 4-8: dc across (60)
 (remaining rows are worked flat)
-
-Row 8: \*4 dc, decrease\* repeat from * to * across, chain 2 and turn (48)
-
-Row 9: \*3 dc, decrease\* repeat from * to * across, chain 2 and turn (40)
-
-Row 10: \*2 dc, decrease\* repeat from * to * across, fasten off (30)
-
-## Head Flap
-
-(worked flat)
-
-Attach yarn to 8th st in the previous row
-
-Row 1: \*dc into first 2 sts, decrease\* repeat 4 times, dc into next 2 sts, chain 2 and turn
-
-Row 2: 2 dc, decrease, 3 dc, decrease, 2 dc, chain 2 and turn
-
-Row 3: 1 dc, decrease, 3 dc, decrease, 1 dc, chain 2 and turn
-
-Rows 4-6: dc across, chain 2 and turn
-
-Row 7: decrease, dc into next 3 sts, decrease, chain 2 and turn
-
-Row 8: hdc across, fasten off, leaving a 6-8" tail
+Row 9: \*10 dc, decrease\* repeat from \* to \* across, chain 2 and turn (55)
+Row 10: \*9 dc, decrease\* repeat from \* to \* across, chain 2 and turn (50)
+Row 11: \*8 dc, decrease\* repeat from \* to \* across, fasten off (45)
 
 ## Eyes and Nose
 
