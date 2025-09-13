@@ -18,13 +18,17 @@ decrease = dc2tog = double crochet 2 together
 ### Notes:
 Ch2 at the end of each row does not count as a dc. Ends of rows will be hidden behind the robot when assembled.
 
-Use stitch markers to help keep track of increases and decreases.
+Use stitch markers to help keep track of increases and decreases. I like to use five 12-inch strands of yarn in a contrasting color to mark the increases in rows 2 and 3 of the body, then use the same 5 pieces of yarn to mark increases in subsequent rows. 
+
+Body construction: The first row of the body is worked flat to prevent twisting, then the remaining rows are worked in a spiral for a seamless look. The first few stitches of the spiral are intentionally worked in a sc and hdc to create a smooth transition.
 
 # Pattern
 
 ## Body
 
 (neck down construction, worked in the round)
+
+Note: 
 
 Chain 32 and turn 
 
