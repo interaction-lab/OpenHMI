@@ -66,4 +66,20 @@ Row 10: \*9 dc, decrease\* repeat from \* to \* across, chain 2 and turn (50)
 
 Row 11: \*8 dc, decrease\* repeat from \* to \* across, fasten off (45)
 
-## Head Flap Instructions TBD
+## Head Flap Instructions
+
+Work into the top of the previous head row. Skip 8 stitches and begin the row working into the ninth stitch. 
+
+Note: The actual number of decreases will depend on how many stitches are in the last row of the head. I suggest doing row 1 as written, then counting how many stitches you have. Add or subtract decreases as needed to make sure you have exactly 14 stitches after Row 3.
+
+Row 1: Attach yarn and chain 3 (does not count as a stitch) Dc2tog, dc to just before the center of the previous row, dc2tog, dc, dc2tog, dc across until there are 10 stitches remaining in the previous row, dc2tog, chain 2 and turn
+
+Row 2: Dc2tog, dc2tog, dc across to just before the center of the previous row, dc2tog, dc, dc2tog, dc across until 4 stitches remain, dc2tog, dc2tog, chain 2 and turn
+
+Row 3: Dc2tog, dc2tog, dc across to just before the center of the previous row, dc2tog, dc, dc2tog, dc across until 4 stitches remain, dc2tog, dc2tog, chain 2 and turn (14)
+
+Row 4: sc, sc, hdc, hdc, dc2tog, dc2tog, dc2tog, hdc, hdc, sc, sc, ch1 and turn
+
+Row5: sc, sc, hdc, hdc, dc2tog, dc, hdc, hdc, sc, sc
+
+Row 6-9: dc across
